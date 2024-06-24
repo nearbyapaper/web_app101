@@ -24,10 +24,12 @@ const TextField101 = (props) => {
               "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
                 {
                   borderColor: "#9cbb80",
+                  color: "white",
                 },
               "&.Mui-focused .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
                 {
                   borderColor: "#9cbb80",
+                  color: "white",
                 },
             }
       }

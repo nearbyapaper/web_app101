@@ -1,23 +1,21 @@
+"use client";
+
 import { Grid, Typography } from "@mui/material";
 import TextField101 from "../utils/text-input";
 import Button101 from "../utils/button";
-// import { useRouter } from "next/router";
+// import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
-  // const router = useRouter();
+  const router = useRouter();
 
-  // const navigateHome = () => {
-  //   router.push({
-  //     pathname: "/home",
-  //     // query: { name: 'John' },
-  //   });
-  // };
+  const navigateHome = () => {
+    router.push("/home");
+  };
 
-  // const navigateRegister = () => {
-  //   router.push({
-  //     pathname: "/register",
-  //   });
-  // };
+  const navigateRegister = () => {
+    router.push("/register");
+  };
 
   return (
     <Grid
@@ -66,13 +64,13 @@ const Login = () => {
       </Grid>
       <Grid item container direction="row" justifyContent="center" spacing={2}>
         <Grid item>
-          <Button101 variant="contained" label="Login" />
+          <Button101 variant="contained" label="Login" onClick={navigateHome} />
         </Grid>
         <Grid item>
           <Button101
             variant="outlined"
             label="Register"
-            // onClick={navigateRegister}
+            onClick={navigateRegister}
           />
         </Grid>
       </Grid>
